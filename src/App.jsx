@@ -1,33 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Header } from './componentes/Header'
+import { Section_um } from './componentes/section_um'
+import { Section_dois } from './componentes/section_dois'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Section_um />
+      <Section_dois />
+      {/*Essses <h1> e o <a> foram so para explicar pode apagar */}
+      <h1>Estou pegando como base da tela inicial o deezer</h1>
+      <a href='https://www.deezer.com/br/offers/premium'>Deezer site </a>
     </>
   )
 }
